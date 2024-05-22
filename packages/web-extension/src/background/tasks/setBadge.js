@@ -40,12 +40,12 @@ function createBadge(text, color) {
 
 // https://github.com/w3c/ServiceWorker/issues/1577
 function manageIcon() {
-  if (window.matchMedia) {
+  if (self.matchMedia) {
     let manualListener;
 
-    setIcon(window.matchMedia('(prefers-color-scheme: dark)').matches);
+    setIcon(self.matchMedia('(prefers-color-scheme: dark)').matches);
 
-    window
+    self
       .matchMedia('(prefers-color-scheme: dark)')
       .addEventListener('change', (e) => {
         window.clearInterval(manualListener);
