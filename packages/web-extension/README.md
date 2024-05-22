@@ -57,8 +57,9 @@ resize your browser to see how your page responds at various supported
 
 ## Install on Firefox
 
-1. Go to [Carbon Devtools](https://addons.mozilla.org/en-US/firefox/addon/carbondevtools/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search) on the
-   Firefox browser add-ons.
+1. Go to
+   [Carbon Devtools](https://addons.mozilla.org/en-US/firefox/addon/carbondevtools/?utm_source=addons.mozilla.org&utm_medium=referral&utm_content=search)
+   on the Firefox browser add-ons.
 2. Click the "+ Add to Firefox" button.
 3. Once installed you can click to open it from your toolbar.
 
