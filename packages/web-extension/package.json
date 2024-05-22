@@ -14,7 +14,9 @@
     "lint": "yarn lint:js && yarn lint:css",
     "lint:js": "eslint . --ext .js",
     "lint:css": "stylelint 'src/**/*.{css,scss}' --report-needless-disables --report-invalid-scope-disables",
-    "test": "yarn format && yarn lint"
+    "test": "yarn format && yarn lint",
+    "launch:chrome": "web-ext run -t chromium --start-url \"https://www.ibm.com\" --source-dir ./dist/",
+    "launch:firefox": "web-ext run --start-url \"about:debugging#/runtime/this-firefox\" --source-dir ./dist/"
   },
   "dependencies": {
     "@carbon/colors": "^10.30.0",
@@ -32,13 +34,14 @@
     "carbon-components-react": "^7.41.0",
     "color": "^3.1.2",
     "node-fetch": "^3.1.1",
-    "url": "^0.11.0"
+    "url": "^0.11.0",
+    "web-ext": "^7.11.0"
   },
   "devDependencies": {
-    "@carbon/icons-react": "^10.37.0",
     "@babel/core": "^7.11.6",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
+    "@carbon/icons-react": "^10.37.0",
     "babel-loader": "^8.1.0",
     "clean-webpack-plugin": "^4.0.0",
     "copy-webpack-plugin": "^6.2.1",
