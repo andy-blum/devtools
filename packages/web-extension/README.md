@@ -75,8 +75,8 @@ resize your browser to see how your page responds at various supported
 - `yarn launch:firefox` to open https://ibm.com in firefox
 - `yarn launch:firefox:dev` to open firefox to the extension's debugging page.
 
-> [!NOTE] You may need to re-launch the extension for some changes (i.e. changes
-> to the manifest file).
+Note: You may need to re-launch the extension for some changes (e.g. changes to
+the manifest file).
 
 #### Build extension
 
