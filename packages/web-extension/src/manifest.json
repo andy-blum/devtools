@@ -4,7 +4,7 @@
   "manifest_version": 3,
   "description": "{package_description}",
   "author": "{package_author}",
-  "permissions": ["activeTab", "storage", "scripting", "tabs"],
+  "permissions": ["activeTab", "storage", "scripting"],
   "host_permissions": [
     "https://*.mybluemix.net/*",
     "https://*.carbondesignsystem.com/*"
@@ -12,6 +12,13 @@
   "background": {
     "service_worker": "/background/index.js",
     "scripts": ["/background/index.js"]
+  },
+  "minimum_chrome_version": "121",
+  "browser_specific_settings": {
+    "gecko": {
+      "strict_min_version": "121.0",
+      "id": "{a12521e6-1ba2-4d48-9ec2-9286a37d82d1}"
+    }
   },
   "web_accessible_resources": [
     {
